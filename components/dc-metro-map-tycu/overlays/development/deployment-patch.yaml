@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-tycu
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-pyxis-tenant/appstudio/dc-metro-map-tycu@sha256:63e68b8eea5af254c96e482f5ba9100dae594cbd26c5e8cd608a45f5d2ad2701
+        name: my-nodejs
+        resources: {}
+status: {}
